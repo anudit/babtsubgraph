@@ -1,0 +1,6 @@
+type SBT @entity {
+  id: ID!
+  tokenId: BigInt!
+  owner: Bytes!
+  tokenURI: String!
+}
