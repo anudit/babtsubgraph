@@ -1,6 +1,6 @@
 # Binance Account Bound (BAB) Token Subgraph
 
-Build completed: QmQnLBhyYjLPssCWduqxDsQZTHbdqPPdJVp7ctaQxQ4ASz
+Build completed: QmVjpo9JBpyHzx7FD2NgiNuAZHGearYfpkWx19SQJAhWwd
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/binance-account-bound-token
 
