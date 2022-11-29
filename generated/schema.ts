@@ -15,10 +15,6 @@ export class SBT extends Entity {
   constructor(id: string) {
     super();
     this.set("id", Value.fromString(id));
-
-    this.set("tokenId", Value.fromBigInt(BigInt.zero()));
-    this.set("owner", Value.fromBytes(Bytes.empty()));
-    this.set("tokenURI", Value.fromString(""));
   }
 
   save(): void {
@@ -71,5 +67,32 @@ export class SBT extends Entity {
 
   set tokenURI(value: string) {
     this.set("tokenURI", Value.fromString(value));
+  }
+
+  get timestamp(): BigInt {
+    let value = this.get("timestamp");
+    return value!.toBigInt();
+  }
+
+  set timestamp(value: BigInt) {
+    this.set("timestamp", Value.fromBigInt(value));
+  }
+
+  get attestor(): Bytes {
+    let value = this.get("attestor");
+    return value!.toBytes();
+  }
+
+  set attestor(value: Bytes) {
+    this.set("attestor", Value.fromBytes(value));
+  }
+
+  get txnhash(): Bytes {
+    let value = this.get("txnhash");
+    return value!.toBytes();
+  }
+
+  set txnhash(value: Bytes) {
+    this.set("txnhash", Value.fromBytes(value));
   }
 }

@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: schema.graphql
 dataSources:
@@ -11,16 +11,16 @@ dataSources:
       startBlock: 20746048
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - SBT
       abis:
         - name: SBT
-          file: SBT\abis\SBT.json
+          file: SBT/abis/SBT.json
       eventHandlers:
         - event: Attest(indexed address,indexed uint256)
           handler: handleAttest
         - event: Revoke(indexed address,indexed uint256)
           handler: handleRevoke
-      file: SBT\SBT.wasm
+      file: SBT/SBT.wasm

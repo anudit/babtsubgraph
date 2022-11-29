@@ -3,4 +3,7 @@ type SBT @entity {
   tokenId: BigInt!
   owner: Bytes!
   tokenURI: String!
+  timestamp: BigInt!
+  attestor: Bytes!
+  txnhash: Bytes!
 }
